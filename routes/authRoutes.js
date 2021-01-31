@@ -1,8 +1,9 @@
 const express = require('express');
-const { signup } = require('../controllers/authController');
-const { validateSignupRequest, isRequestValidated } = require('../validators/authValidator');
+const { signup, signin } = require('../controllers/authController');
+const { validateSignupRequest, validateSigninRequest, isRequestValidated } = require('../validators/authValidator');
 const router = express.Router();
 
-router.post('/register', validateSignupRequest, isRequestValidated, signup);
+router.post('/signup', validateSignupRequest, isRequestValidated, signup);
+router.post('/signin', validateSigninRequest, isRequestValidated, signin);
 
 module.exports = router;
