@@ -1,0 +1,16 @@
+// import scss abstracts
+@import 'scss/abstracts/variables';
+
+// import base
+@import 'scss/base/reset';
+
+// import scss utils
+@import 'scss/utils/utils';
+
+// import scss components
+@import 'scss/components/navbar';
+@import 'scss/components/bgImage';
+@import 'scss/components/account';
+
+// import scss layout
+@import 'scss/layout/grid';
